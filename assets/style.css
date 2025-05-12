@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Quicksand';
+}
+
+h2 {
+    font-family: 'Quicksand';
+    font-size: small;
+    font-weight: 500;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.maatschappijinfo {
+    color: #065A82;
+    padding: 30px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.maatschappijtekst {
+    padding: 20px;
+    padding-left: 45px;
+    margin-top: -10px;
+    font-size: x-large;
+}
+
+.flex {
+    display: flex;
+}
+
+.position {
+    position: relative;
+}
+
+.taal {
+    flex-direction: row;
+}
+
+.nltekst {
+    padding-left: 5px;
+    padding-top: 2px;
+    color: black;
+}
+
+.inloggen {
+    padding-left: 45px;
+}
+
+.inlogplaatje {
+    margin-top: -5px;
+}
+
+.taalinloggen {
+    position: relative;
+    left: 800px;
+}
+
+main {
+    width: 100%;
+    height: 650px;
+    background-color: lightgray;
+}
+
+.hoofdteksten {
+    flex-direction: row;
+}
+
+.hoofdtekstpositie {
+    position: relative;
+    right: 800px;
+    top: 150px;
+    gap: 60px;
+    width: max-content;
+}
