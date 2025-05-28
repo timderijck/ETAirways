@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Quicksand';
+}
+
+h2 {
+    font-family: 'Quicksand';
+    font-size: small;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Quicksand';
+    font-size: 700;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+h4 {
+    font-family: 'Quicksand';
+    font-size: 700;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h5 {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: x-large;
+}
+
+body.loginpage main {
+    background-color: transparent;
+    height: auto;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.maatschappijinfo {
+    color: #065A82;
+    padding: 30px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.maatschappijtekst {
+    padding: 20px;
+    padding-left: 45px;
+    margin-top: -10px;
+    font-size: x-large;
+}
+
+.flex {
+    display: flex;
+}
+
+.position {
+    position: relative;
+}
+
+.taal {
+    flex-direction: row;
+}
+
+.nltekst {
+    padding-left: 5px;
+    padding-top: 2px;
+    color: black;
+}
+
+.inloggen {
+    padding-left: 45px;
+}
+
+.inlogplaatje {
+    margin-top: -5px;
+}
+
+.taalinloggen {
+    left: 800px;
+}
+
+main {
+    width: 100%;
+    height: 800px;
+    background-color: #21295C;
+}
+
+.hoofdteksten {
+    flex-direction: row;
+}
+
+.hoofdtekstpositie {
+    right: 800px;
+    top: 150px;
+    gap: 60px;
+    width: max-content;
+}
+
+.vluchtfoto {
+    justify-content: center;
+}
+
+.vluchtfoto img {
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.dealsbox {
+    background-color: #21295C;
+    border-radius: 10px;
+    width: 400px;
+    height: 180px;
+    opacity: 65%;
+    bottom: 690px;
+    left: 800px;
+}
+
+.dealstekst {
+    padding: 15px;
+    width: 400px;
+    height: 180px;
+    bottom: 873px;
+    left: 800px;
+}
+
+.naardeals {
+    justify-content: flex-end;
+    padding-right: 20px;
+    color: #ffffff;
+    bottom: 935px;
+    right: 320px;
+}
+
+.naardeals a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.blauwebox {
+    background-color: #0077CD;
+    width: 150px;
+    height: 30px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blauweboxes {
+    flex-direction: row;
+    width: fit-content;
+    gap: 40px;
+    left: 350px;
+    margin-top: -730px;
+    opacity: initial;
+}
+
+.vertrekblok {
+    width: 1250px;
+    height: 150px;
+    background-color: #065A82;
+    border-radius: 32px;
+    left: 135px;
+    bottom: 140px;
+    padding-left: 1px;
+}
+
+.witteboxes {
+    border-radius: 6px;
+    height: 60px;
+    flex-direction: row;
+    gap: 30px;
+    top: 45px;
+    left: 50px;
+}
+
+.wittebox1 {
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 3px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+
+.wittebox2 {
+    width: 360px;
+    background-color: #FFFFFF;
+    justify-content: flex-start;
+}
+
+.wittebox3 {
+    background-color: #FFFFFF;
+}
+
+.omgedraaidimg {
+    padding: 10px;
+    padding-top: 14px;
+}
+
+.extraruimte {
+    padding-left: 30px;
+}
+
+.dropdownbox {
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+.splitslijn {
+    background-color: white;
+    height: 13px;
+    width: 100%;
+    top: 180px;
+}
+
+.pijlteruglogin {
+    right: 1225px;
+    top: 150px;
+}
+
+.logintekst {
+    text-align: center;
+    top: 125px;
+    right: 650px;
+    justify-content: center;
+}
+
+.loginachtergrond {
+    background-image: url("../img/loginachtergrond.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 743px;
+    width: 100%;
+}
+
+.loginborder {
+    background-color: gray;
+    opacity: 50%;
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;    
+}
