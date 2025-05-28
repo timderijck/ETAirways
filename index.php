@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <h1>I love the best teacher Niek!</h1>
     <header class="flex">
         <div class="maatschappijinfo flex">
             <img src="assets/img/ETAirways.png" alt="ETplaatje" height="80" width="80">
