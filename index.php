@@ -11,7 +11,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <header class="flex">
         <div class="maatschappijinfo flex">
             <img src="assets/img/ETAirways.png" alt="ETplaatje" height="80" width="80">
@@ -31,8 +31,9 @@
                     </div>
                     <div class="nltekst">
                         <h2>Inloggen</h2>
+
                     </div>
-                </div>
+
             </div>
         </div>
         <div class="hoofdteksten flex">
@@ -46,57 +47,6 @@
     </header>
     <main>
 
-        <section class="bekende-bestemingen">
-
-            <div class="blok-container">
-                <div class="bekende-bestemmingen-blok">
-                    <h1>bekende bestemingen</h1>
-                </div>
-            </div>
-
-            <div class="container-grid">
-                <div class="container-img">
-                    <img src="assets/img/londen.png" alt="">
-                    <img src="assets/img/madrid.png" alt="">
-                    <img src="assets/img/hongkong.png" alt="">
-                </div>
-
-                <div class="container-img2">
-                    <img src="assets/img/berlijn.png" alt="">
-                    <img src="assets/img/barcelona.png" alt="">
-                </div>
-            </div>
-        </section>
-<h1> test</h1>
-
-
-
-        <section class="verhuur">
-
-            <div class="blok-autoverhuur">
-                <div class="container-auto">
-                    <img src="assets/img/autoverhuur.png" alt="" width="150px" height="150px">
-                    <div class="huur-een-auto">
-                        <h1>huur een auto</h1>
-                        <h2>huur bij ETAirways voordelig een auto</h2>
-                    </div>
-                       </div> 
-                </div>
-
-
-
-                <div class="blok-hotellverhuur">
-                    <div class="container-hotel">
-                    <img src="assets/img/hotel.png" alt="" width="150px" height="150px">
-                    <div class="hotel">
-
-                    </div>
-                    
-                    </div>
-                </div>
-
-
-        </section>
 
 
         <div class="vluchtfoto flex">
@@ -147,7 +97,67 @@
                 <h2>ET holidays</h2>
             </div>
         </div>
-        <div class="splitslijn position"></div>
+      
+
+
+
+        
+
+
+
+
+
+
+        <section class="bekende-bestemingen">
+
+            <div class="blok-container">
+                <div class="bekende-bestemmingen-blok">
+                    <h1>bekende bestemingen</h1>
+                </div>
+            </div>
+               
+            <div class="container-grid">
+                <div class="container-img">
+                    <img src="assets/img/londen.png" alt="">
+                    <img src="assets/img/madrid.png" alt="">
+                    <img src="assets/img/hongkong.png" alt="">
+                </div>
+
+                <div class="container-img2">
+                    <img src="assets/img/berlijn.png" alt="">
+                    <img src="assets/img/barcelona.png" alt="">
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="verhuur">
+
+            <div class="blok-autoverhuur">
+                <div class="container-auto">
+                    <img src="assets/img/autoverhuur.png" alt="" width="150px" height="150px">
+                    <div class="huur-een-auto">
+                        <h1>huur een auto</h1>
+                        <h2>huur bij ETAirways voordelig een auto</h2>
+                    </div>
+                       </div> 
+                </div>                                                                                                                                        
+
+                    <div class="blok-hotellverhuur">
+                    <div class="container-hotel">
+                        <img src="assets/img/hotel.png" alt="" width="150px" height="150px">
+                        <div class="huur-een-kamer">
+                            <h1>huur een hotelkamer</h1>
+                            <h2>huur bij ETAirways voordelig een hotelkamer</h2>
+                        </div>
+                        </div> 
+                    </div>
+
+
+        </section>
+
+
+    
 
     </main>
 
