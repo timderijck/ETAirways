@@ -45,10 +45,24 @@
         </div>
     </header>
     <main>
-        <div class="loginachtergrond"></div>
+        <div class="loginachtergrond flex"></div>
         <div class="loginborder flex position"></div>
         <div class="logintekstborder flex">
-
+            <div class="volgordeborder flex">
+                <h5>Login</h5>
+                <div class="verticalpadding"></div>
+                <input type="text" id="gebruikersnaam" name="gebruikersnaam" placeholder="Gebruikersnaam" class="noborder">
+                <div class="verticalpadding2"></div>
+                <input type="text" id="password" name="password" placeholder="Password" class="noborder">
+            </div>
+        </div>
+        <div class="loginenadminlogin flex">
+            <div class="loginalsadmin">
+                <h6>Login als admin</h6>
+            </div>
+            <div class="loginknop">
+                <button class="loginknop">Login</button class="loginknop">
+            </div>
         </div>
     </main>
 

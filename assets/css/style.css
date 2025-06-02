@@ -33,6 +33,12 @@ h5 {
     font-size: x-large;
 }
 
+h6 {
+    font-family: 'Quicksand';
+    font-size: large;
+    font-weight: 600;
+}
+
 body.loginpage main {
     background-color: transparent;
     height: auto;
@@ -333,9 +339,76 @@ main {
 }
 
 .loginborder {
-    background-color: gray;
+    position: absolute;
+    background-color: #FFFFFF;
     opacity: 50%;
     width: 350px;
     height: 350px;
     border-radius: 30px;
+    bottom: 50px;
+    left: 590px;
+}
+
+.volgordeborder {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 50px;
+    left: 590px;
+    padding: 25px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.verticalpadding {
+    padding: 15px;
+}
+
+.verticalpadding2 {
+    padding: 45px;
+}
+
+.noborder {
+    border: none;
+    outline: none;
+}
+
+.loginenadminlogin {
+    position: absolute;
+    bottom: 75px;
+    left: 615px;
+    gap: 60px;
+}
+
+.loginalsadmin {
+    color: #404BED;
+    text-decoration: underline;
+    margin-top: 17px;
+}
+
+.loginknop {
+    height: 55px;
+    width: 100px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.loginknop2 {
+    height: 55px;
+    width: 100px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 200px;
 }
