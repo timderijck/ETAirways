@@ -99,8 +99,31 @@
         </div>
       
 
+        <section class="bestemmingen-deals">
+
+        <div class="container-deals-vluchten">
+                <div class="deals-bestemmingen-blok">
+                    <h1>Bestemingen & Deals</h1>
+                </div>
+             <h1>Vluchten ET holidays Promo-Deals</h1>
+            </div>
+
+            <div class="container-deals-php">
+            <?php
+
+               foreach ($result as $value) {
+             
+               }
+
+                
+            ?>
+        </div>
 
 
+
+
+
+        </section>
         
 
 
@@ -161,8 +184,11 @@
 
     </main>
 
-    <footer>
-
+    <footer class="footer">
+     <div class="footer-blok-info">
+            <img src="assets/img/ETAirways.png" alt="">
+            <h1>ET Airways</h1>
+     </div>
     </footer>
 </body>
 
