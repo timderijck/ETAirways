@@ -26,11 +26,20 @@
                     </div>
                 </div>
                 <div class="inloggen flex">
-                    <div class="inlogplaatje">
+                    <div class="inlogplaatje position">
                         <img src="assets/img/inlog.png" alt="inlog" width="32" height="32">
                     </div>
                     <div class="nltekst">
-                        <h2>Inloggen</h2>
+                        <div class="dropdown">
+                            <button class="dropbtn"><h2>Inloggen</h2>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="registratie.php"><h2>Account aanmaken</h2></a>
+                                <a href="login.php"><h2>Inloggen</h2></a>
+                                <a href="adminlogin.php"><h2>Admin</h2></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
