@@ -46,10 +46,10 @@
         </div>
         <div class="hoofdteksten flex">
             <div class="hoofdtekstpositie flex position">
-                <h1>Home</h1>
-                <h1>Mijn Reis</h1>
-                <h1>Informatie</h1>
-                <h1>Hulp</h1>
+                <a href="index.php"><h1>Home</h1></a>
+                <a href="reisinfo.php"><h1>Mijn Reis</h1></a>
+                <a href="info.php"><h1>Informatie</h1></a>
+                <a href="hulp.php"><h1>Hulp</h1></a>
             </div>
         </div>
     </header>
@@ -89,7 +89,7 @@
             <h3>Bekijk dan nu onze vakantie <br>deals!</h3>
         </div>
         <div class="naardeals flex position">
-            <h4><a href="">Naar Deals →</a></h4>
+            <h4><a href="reisinfo.php">Naar Deals →</a></h4>
         </div>
         <div class="blauweboxes flex position">
             <div class="blauwebox flex">
