@@ -478,7 +478,7 @@ color: #13B3B6
 }
 
 .footer-blok-info{
-    background-color: black;
+    background-color: white;
     height: 250px;
     width: 100%;
     margin-top: 250vh;
@@ -645,4 +645,17 @@ color: #13B3B6
 
 .dropdown-content a:hover {
   background-color: #ddd;
+}
+
+.footer {
+    margin-top: -1739px;
+}
+
+
+.body-admin{
+    background-image: url("../img/adminachtergrond.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 743px;
+    width: 100%;
 }
