@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+   <?php
+     include('./dbcalls/conn.php');
+    
+  ?>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -11,7 +15,8 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
+ 
     <header class="flex">
         <div class="maatschappijinfo flex">
             <img src="assets/img/ETAirways.png" alt="ETplaatje" height="80" width="80">
@@ -30,6 +35,7 @@
                         <img src="assets/img/inlog.png" alt="inlog" width="32" height="32">
                     </div>
                     <div class="nltekst">
+                        <h2>Inloggen</h2>
                         <div class="dropdown">
                             <button class="dropbtn"><h2>Inloggen</h2>
                                 <i class="fa fa-caret-down"></i>
@@ -41,7 +47,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+
             </div>
         </div>
         <div class="hoofdteksten flex">
@@ -54,6 +60,7 @@
         </div>
     </header>
     <main>
+
         <div class="vluchtfoto flex">
             <img src="assets/img/vluchtfoto.png" alt="vluchtfoto" width="1250" height="710">
         </div>
@@ -102,7 +109,40 @@
                 <h2>ET holidays</h2>
             </div>
         </div>
-        <div class="splitslijn position"></div>
+
+        <section class="bestemmingen-deals">
+
+        <div class="container-deals-vluchten">
+                <div class="deals-bestemmingen-blok">
+                    <h1>Bestemingen & Deals</h1>
+                </div>
+             <h1>Vluchten ET holidays Promo-Deals</h1>
+            </div>
+
+            
+            <div class="container-deals-php">
+            <?php
+
+               foreach ($result as $value) {
+                
+               }
+
+                
+            ?>
+        </div>
+
+
+
+
+
+        </section>
+        
+
+
+
+
+
+
         <section class="bekende-bestemingen">
 
             <div class="blok-container">
@@ -110,6 +150,7 @@
                     <h1>bekende bestemingen</h1>
                 </div>
             </div>
+               
             <div class="container-grid">
                 <div class="container-img">
                     <img src="assets/img/londen.png" alt="">
@@ -122,30 +163,41 @@
                     <img src="assets/img/barcelona.png" alt="">
                 </div>
             </div>
+        </div>
         </section>
+
         <section class="verhuur">
 
             <div class="blok-autoverhuur">
                 <div class="container-auto">
                     <img src="assets/img/autoverhuur.png" alt="" width="150px" height="150px">
                     <div class="huur-een-auto">
-                        <h1>Huur een auto</h1>
-                        <h2>Huur bij ETAirways voordelig een auto</h2>
+                        <h1>huur een auto</h1>
+                        <h2>huur bij ETAirways voordelig een auto</h2>
                     </div>
-                </div>
-            </div>
-            <div class="blok-hotellverhuur">
-                <div class="container-hotel">
-                    <img src="assets/img/hotel.png" alt="" width="150px" height="150px">
-                    <div class="hotel">
+                       </div> 
+                </div>                                                                                                                                        
+
+                    <div class="blok-hotellverhuur">
+                    <div class="container-hotel">
+                        <img src="assets/img/hotel.png" alt="" width="150px" height="150px">
+                        <div class="huur-een-kamer">
+                            <h1>huur een hotelkamer</h1>
+                            <h2>huur bij ETAirways voordelig een hotelkamer</h2>
+                        </div>
+                        </div> 
                     </div>
-                </div>
-            </div>
+
+
         </section>
+
     </main>
 
-    <footer>
-
+    <footer class="footer">
+     <div class="footer-blok-info">
+            <img src="assets/img/ETAirways.png" alt="">
+            <h1>ET Airways</h1>
+     </div>
     </footer>
 </body>
 

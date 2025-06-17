@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+
+body{
+    color:#065A82 ;
+}
+
+
 h1 {
     font-family: 'Quicksand';
 }
@@ -117,6 +123,7 @@ main {
     color: inherit;
 }
 
+
 .bekende-bestemmingen-blok {
     height: 63px;
     width: 425px;
@@ -184,6 +191,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 
 .container-img,
 .container-img2 {
@@ -321,6 +329,181 @@ main {
     width: 100%;
     top: 180px;
 
+}
+
+.deals-bestemmingen-blok{
+  height: 63px;
+    width: 425px;
+    background-color:#13B3B6;
+    border-radius: 50px;
+    margin-top: 40vh;
+    text-align: center;
+}
+
+.deals-bestemmingen-blok h1{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.container-deals-vluchten{
+    position: absolute;
+    right: 1000px;
+}
+
+
+.bestemmingen-deals h1{
+color: #13B3B6
+}
+
+
+
+
+
+
+
+
+
+
+.bekende-bestemmingen-blok{
+    height: 63px;
+    width: 425px;
+    background-color:#13B3B6;
+    border-radius: 50px;
+    margin-top: 100vh;
+}
+
+
+.bekende-bestemmingen-blok h1{
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+
+    .bestemmingen-deals h1{
+        color: white;
+    }
+
+
+
+
+
+.blok-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.container-img,
+.container-img2 {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.container-img {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container-img2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.blok-autoverhuur{
+      width: 300px;
+  height: 300px;
+  background-color: #065A82;
+  border-radius: 30px;
+}
+
+.blok-hotellverhuur{
+      width: 300px;
+  height: 300px;
+  background-color: #065A82;
+  border-radius: 30px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.verhuur{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.huur-een-auto{
+    width: 250px;
+    height: 100px;
+    background-color: #13B3B6;
+    border-radius: 35px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+
+
+.container-auto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.container-hotel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.huur-een-kamer{
+        width: 250px;
+    height: 100px;
+    background-color: #13B3B6;
+    border-radius: 35px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.footer-blok-info{
+    background-color: white;
+    height: 250px;
+    width: 100%;
+    margin-top: 250vh;
+}
+
+.footer-blok-info img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    margin-top: 70px;
+}
+
+.footer-blok-info h1{
+  font-size: 50px;
+    color: #0077CD;
+    position: absolute;
+    left: 300px;
+        margin-top: 90px;
+
+    
 }
 
 .pijlteruglogin {
@@ -507,4 +690,16 @@ body {
 .boeken {
     justify-content: flex-end;
     flex-direction: column;
+}
+.footer {
+    margin-top: -1739px;
+}
+
+
+.body-admin{
+    background-image: url("../img/adminachtergrond.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 743px;
+    width: 100%;
 }
