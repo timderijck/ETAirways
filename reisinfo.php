@@ -31,13 +31,20 @@
                     </div>
                     <div class="nltekst">
                         <div class="dropdown">
-                            <button class="dropbtn"><h2>Inloggen</h2>
+                            <button class="dropbtn">
+                                <h2>Inloggen</h2>
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a href="registratie.php"><h2>Account aanmaken</h2></a>
-                                <a href="login.php"><h2>Inloggen</h2></a>
-                                <a href="adminlogin.php"><h2>Admin</h2></a>
+                                <a href="registratie.php">
+                                    <h2>Account aanmaken</h2>
+                                </a>
+                                <a href="login.php">
+                                    <h2>Inloggen</h2>
+                                </a>
+                                <a href="adminlogin.php">
+                                    <h2>Admin</h2>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -46,17 +53,39 @@
         </div>
         <div class="hoofdteksten flex">
             <div class="hoofdtekstpositie flex position">
-                <a href="index.php"><h1>Home</h1></a>
-                <a href="reisinfo.php"><h1>Mijn Reis</h1></a>
-                <a href="info.php"><h1>Informatie</h1></a>
-                <a href="hulp.php"><h1>Hulp</h1></a>
+                <a href="index.php">
+                    <h1>Home</h1>
+                </a>
+                <a href="reisinfo.php">
+                    <h1>Mijn Reis</h1>
+                </a>
+                <a href="info.php">
+                    <h1>Informatie</h1>
+                </a>
+                <a href="hulp.php">
+                    <h1>Hulp</h1>
+                </a>
             </div>
         </div>
     </header>
     <main>
         <div class="reisinfoachtergrond flex">
             <div class="reisinformatieborder flex">
-
+                <h1>Mijn Reis</h1>
+                <div class="boeken flex">
+                    <div class="aantaldropdown">
+                        <input type="text">
+                    </div>
+                    <div class="hoelangdropbox">
+                        <input type="text">
+                    </div>
+                    <div class="prijs"></div>
+                    <div>
+                        <div class="loginknop2">
+                            <button class="loginknop">Boeken</button class="loginknop">
+                        </div>
+                    </div>  
+                </div>
             </div>
         </div>
     </main>
