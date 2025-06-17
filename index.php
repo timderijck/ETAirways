@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+   <?php
+     include('./dbcalls/conn.php');
+    
+  ?>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,6 +16,7 @@
 </head>
 
 <body class="body">
+ 
     <header class="flex">
         <div class="maatschappijinfo flex">
             <img src="assets/img/ETAirways.png" alt="ETplaatje" height="80" width="80">
@@ -119,7 +124,7 @@
             <?php
 
                foreach ($result as $value) {
-             
+                
                }
 
                 
