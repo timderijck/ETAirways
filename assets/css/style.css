@@ -686,11 +686,16 @@ color: #13B3B6
 }
 
 .dealsitems-box{
-    height: 100px;
-    width: 200px;
+    height: 125px;
+    width: 400px;
     background-color: #13B3B6;
+    margin-top: 40vh;
 }
 
+  .menuitems-box img {
+        width: 150px;
+        height: 100px
+    }
 
 
 

@@ -122,22 +122,33 @@
             
 
             
-            <div class="container-deals-php">
-            <?php
-                include('./dbcalls/read.php');
-             foreach ($result as $value) {
-    echo '<div class="dealsitems-box">';
-  
-    echo '</div>';
-}
-
-
-                
-            ?>
+    
         </div>
 
 
+         <?php
+            
+                include('./dbcalls/read.php');
+                
+             foreach ($result as $value) {
+    echo '<div class="dealsitems-box">';
+         echo '<br> <h1></h1>' . $value['dealbestemming'];
+         
+         echo '<div class="container-img">';
+         echo '<br> <img alt=" ' . $value['dealbestemming'] . '" src=' . $value['img'] . "></img>";
+         echo '</div>';
 
+        echo '<div class="container-prijs">';
+        echo '<div class="blok-prijs">' . $value['prijs'];
+        echo '</div>';
+         echo '</div>';
+             }
+
+        
+
+
+                
+         ?>
 
 
         </section>
@@ -149,6 +160,11 @@
 
 
         <section class="bekende-bestemingen">
+
+
+
+                <div class="container-deals-php">
+   
 
             <div class="blok-container">
                 <div class="bekende-bestemmingen-blok">
