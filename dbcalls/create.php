@@ -1,18 +1,25 @@
 <h1>create</h1>
 
 <?php
+include("./conn.php");
 
-include ("./conn.php");
-$product = $_POST ['gerecht'];
+if (isset($_POST['dealbestemming'])) {
+    $dealbestemming = $_POST['dealbestemming'];
 
 
 
 
-echo 'dit is mijn productnaam: '.$product.' <<<<<';
-$sql = 'INSERT INTO menuitems(Productnaam) VALUES (:product);';
-$stmt = $conn ->prepare($sql);
-$stmt ->bindParam(":product", $product);
+    $sql = 'INSERT INTO deals (dealbestemming) VALUES (:dealbestemming)';
+    $stmt = $conn->prepare($sql);
+    
+    
+    $stmt->bindParam(':dealbestemming', $dealbestemming);
+    
+    
+    $stmt->execute();
 
-$stmt->execute();
-
-header('location: ../index.php');
+    header('Location: ../index.php');
+} else {
+    echo 'Geen bestemming ontvangen.';
+}
+?>
