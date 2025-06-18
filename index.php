@@ -120,12 +120,17 @@
             </div>
 
             
+
+            
             <div class="container-deals-php">
             <?php
+                include('./dbcalls/read.php');
+             foreach ($result as $value) {
+    echo '<div class="dealsitems-box">';
+  
+    echo '</div>';
+}
 
-               foreach ($result as $value) {
-                
-               }
 
                 
             ?>
@@ -176,6 +181,11 @@
                         <h2>huur bij ETAirways voordelig een auto</h2>
                     </div>
                        </div> 
+                   
+                       <a href="https://www.rentalcars.com/?affiliateCode=google&cor=nl&label=generic:mdzNTSnISTPZcxgBtGgLKf3Q:tyS:cr204733937453:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-326914778:lp9064967:li:dec:dm:ws&gad_source=1&gad_campaignid=186113716&gbraid=0AAAAAD9RW4sPxMOpVXTOFdLi1cVmexHR1&gclid=CjwKCAjwx8nCBhAwEiwA_z__0zZgCuNR7uwz2rm914TCNFEZ7Kw5cjqd7eMQMK5cixwXhN_8zBf-pRoCt90QAvD_BwE">
+                            <h3>huur hier een auto</h3>
+                       </a>
+                     
                 </div>                                                                                                                                        
 
                     <div class="blok-hotellverhuur">
@@ -186,18 +196,20 @@
                             <h2>huur bij ETAirways voordelig een hotelkamer</h2>
                         </div>
                         </div> 
+                        <a href="https://www.airbnb.nl/?sem_brand_erf=true&&c=.pi0.pk119549723_5008905443&ghost=true&gad_source=1&gad_campaignid=119549723&gbraid=0AAAAADz55LnfaesBuPhAUXXWQZVndEIVr&gclid=CjwKCAjwx8nCBhAwEiwA_z__04cxFSnwgFNv1-u_w48Dgm3P19bW9s4D1Kq9HxHADBXqoZP_W0C-dRoCS9oQAvD_BwE&gclsrc=aw.ds">
+                            <h3>boek uw hotel</h3>
+                        </a>
                     </div>
 
 
         </section>
-
+ <?php include('./includes/footer.php'); ?>
     </main>
 
-    <footer class="footer">
-     <div class="footer-blok-info">
-            <img src="assets/img/ETAirways.png" alt="">
-            <h1>ET Airways</h1>
-     </div>
+  
+
+    <footer>
+   
     </footer>
 </body>
 
