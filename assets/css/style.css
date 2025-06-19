@@ -338,6 +338,12 @@ main {
     border-radius: 50px;
     margin-top: 40vh;
     text-align: center;
+    align-items: center;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dealstekstblok {
+    top: 15px;
 }
 
 .deals-bestemmingen-blok h1{
@@ -348,9 +354,12 @@ main {
 
 .container-deals-vluchten{
     position: absolute;
-    right: 1000px;
+    right: 36%;
 }
 
+.promodeals {
+   left: 15px; 
+}
 
 .bestemmingen-deals h1{
 color: #13B3B6
@@ -371,6 +380,7 @@ color: #13B3B6
     background-color:#13B3B6;
     border-radius: 50px;
     margin-top: 100vh;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -702,4 +712,48 @@ body {
     background-repeat: no-repeat;
     height: 743px;
     width: 100%;
+}
+
+.indexposition {
+    margin-top: -30px;
+}
+
+.hulpachtergrond {
+    background-image: url("../img/receptie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerhulp {
+    margin-top: -2000px;
+}
+
+.hulpborder {
+    width: 750px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hulpposition {
+    position: absolute;
+    top: 180px;
+}
+
+.hulpzoeken {
+    bottom: 100px;
+}
+
+.bereikbaarvia {
+    bottom: 50px;
+}
+
+.contact {
+    flex-direction: row;
+    top: 50px;
+    gap: 50px;
 }

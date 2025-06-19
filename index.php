@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-   <?php
-     include('./dbcalls/conn.php');
-    
-  ?>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -35,7 +31,6 @@
                         <img src="assets/img/inlog.png" alt="inlog" width="32" height="32">
                     </div>
                     <div class="nltekst">
-                        <h2>Inloggen</h2>
                         <div class="dropdown">
                             <button class="dropbtn"><h2>Inloggen</h2>
                                 <i class="fa fa-caret-down"></i>
@@ -51,7 +46,7 @@
             </div>
         </div>
         <div class="hoofdteksten flex">
-            <div class="hoofdtekstpositie flex position">
+            <div class="hoofdtekstpositie flex position indexposition hulpposition">
                 <a href="index.php"><h1>Home</h1></a>
                 <a href="reisinfo.php"><h1>Mijn Reis</h1></a>
                 <a href="info.php"><h1>Informatie</h1></a>
@@ -114,18 +109,18 @@
 
         <div class="container-deals-vluchten">
                 <div class="deals-bestemmingen-blok">
-                    <h1>Bestemingen & Deals</h1>
+                    <div class="dealstekstblok position">
+                        <h1>Bestemmingen & Deals</h1>
+                    </div>
                 </div>
-             <h1>Vluchten ET holidays Promo-Deals</h1>
+                <div class="promodeals position">
+                    <h1>Vluchten ET holidays Promo-Deals</h1>
+                </div>
             </div>
 
             
             <div class="container-deals-php">
             <?php
-
-               foreach ($result as $value) {
-                
-               }
 
                 
             ?>
@@ -147,7 +142,7 @@
 
             <div class="blok-container">
                 <div class="bekende-bestemmingen-blok">
-                    <h1>bekende bestemingen</h1>
+                    <h1>Bekende Bestemmingen</h1>
                 </div>
             </div>
                
@@ -172,8 +167,8 @@
                 <div class="container-auto">
                     <img src="assets/img/autoverhuur.png" alt="" width="150px" height="150px">
                     <div class="huur-een-auto">
-                        <h1>huur een auto</h1>
-                        <h2>huur bij ETAirways voordelig een auto</h2>
+                        <h1>Huur een auto</h1>
+                        <h2>Huur bij ETAirways voordelig een auto!</h2>
                     </div>
                        </div> 
                 </div>                                                                                                                                        
@@ -182,8 +177,8 @@
                     <div class="container-hotel">
                         <img src="assets/img/hotel.png" alt="" width="150px" height="150px">
                         <div class="huur-een-kamer">
-                            <h1>huur een hotelkamer</h1>
-                            <h2>huur bij ETAirways voordelig een hotelkamer</h2>
+                            <h1>Huur een hotelkamer</h1>
+                            <h2>Huur bij ETAirways voordelig een hotelkamer!</h2>
                         </div>
                         </div> 
                     </div>
