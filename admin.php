@@ -11,10 +11,24 @@
 
 <h1>admin</h1>
 
-<form action="./dbcalls/create.php" method="post">
-    <label >typ hier de bestemming in naam in</label><br>
-    <input type="text" name="gerecht" id="1">
-    <input type="submit" value="submit">
+<form method="POST" action="./dbcalls/create.php">
+    <label>Bestemming:
+        <input type="text" name="dealbestemming" required>
+    </label><br>
+    
+    <label>Afbeelding (naam van bestand):
+        <input type="text" name="img" required>
+    </label><br>
+    
+    <label>Prijs:
+        <input type="number" name="prijs" required>
+    </label><br>
+    
+    <label>Stad:
+        <input type="text" name="stad" required>
+    </label><br>
+    
+    <button type="submit">Toevoegen</button>
 </form>
 </body>
 </html>
@@ -35,10 +49,10 @@ foreach ($result as $value) {
   
     <form action="./dbcalls/update.php" method="post">
         <input type="hidden" name="id" id="" value="<?php echo $value['id']; ?>" >
-        <input type="text" name="productnaam"  value="<?php echo $value['dealbestemming']; ?>">
+        <input type="text" name="dealbestemming"  value="<?php echo $value['dealbestemming']; ?>">
         <input type="text" name="Prijs" id="" value="<?php echo $value['prijs']; ?>">
         <input type="text" name="img" id="" value="<?php echo $value['img']; ?>">
-        <input type="text" name="uitleg" id="" value="<?php echo $value['stad']; ?>">
+        <input type="text" name="stad" id="" value="<?php echo $value['stad']; ?>">
 
         <button type="submit">Update</button>
     </form>

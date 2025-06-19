@@ -135,7 +135,7 @@
          echo '<br> <h1></h1>' . $value['dealbestemming'];
          
          echo '<div class="container-img">';
-         echo '<br> <img alt=" ' . $value['dealbestemming'] . '" src=' . $value['img'] . "></img>";
+         echo '<br> <img alt=" ' . $value['stad'] . '" src=' . $value['img'] . "></img>";
          echo '</div>';
 
         echo '<div class="container-prijs">';
