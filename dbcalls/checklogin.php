@@ -1,21 +1,23 @@
 <?php
-  session_start();
+session_start();
 
-    include("conn.php");
-    $stmt = $conn->prepare("SELECT * FROM Users WHERE username = :username AND password = :password And email = :email;");
-    $stmt->bindParam(":username", $_POST['username']);
-    $stmt->bindParam(":password", $_POST['password']);
-    $stmt->bindParam(":email",    $_POST['email']);
-    $stmt->execute();
-    $result = $stmt->fetch();
+include("conn.php");
+$stmt = $conn->prepare("SELECT * FROM Users WHERE username = :username AND password = :password");
+$stmt->bindParam(":username", $_POST['username']);
+$stmt->bindParam(":password", $_POST['password']);
+$stmt->execute();
+$result = $stmt->fetch();
 
 
 
 if ($result){
     $_SESSION['username'] = $result['username'];
-    header(header: 'location: ../admin.php');
- 
+    header(header: 'location: ../user.php');
+
 }
 else{
-    echo 'boehoe';
+    echo 'verkeerde inlog of wachtwoord';
 }
+var_dump($_POST);
+
+?>

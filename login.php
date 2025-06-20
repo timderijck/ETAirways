@@ -64,7 +64,7 @@
                 <div class="verticalpadding"></div>
 
                 <form method="post" action="./dbcalls/checklogin.php">
-                <input type="text" id="gebruikersnaam" name="gebruikersnaam" placeholder="Gebruikersnaam"
+                <input type="text" id="username" name="username" placeholder="Gebruikersnaam"
                     class="noborder">
                 <div class="verticalpadding2"></div>
                 <input type="text" id="password" name="password" placeholder="Password" class="noborder">
