@@ -12,5 +12,8 @@
               ETAirways: 0643873297
               </h3>
               </div>
+              <div class="container-partners"><h4>onze partners <br> rentalcars.com & airbnb</h4>
+
+            </div>
        </div>
     </footer>

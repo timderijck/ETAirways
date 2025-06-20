@@ -421,6 +421,7 @@ color: #13B3B6
 
 .blok-autoverhuur h3{
     text-align: center;
+
 }
 
 .blok-hotellverhuur{
@@ -432,6 +433,11 @@ color: #13B3B6
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+
+
+.blok-hotellverhuur h3{
+ text-align: center;  
 }
 
 .verhuur{
@@ -485,7 +491,7 @@ color: #13B3B6
     background-color: white;
     height: 250px;
     width: 100%;
-    margin-top: 250vh;
+    margin-top: 100%;
 }
 
 .footer-blok-info img{
@@ -499,6 +505,7 @@ color: #13B3B6
 
 .footer-blok-info h3{
     color: #065A82;
+
 }
 
 .email-container{
@@ -511,6 +518,16 @@ color: #13B3B6
        position: absolute;
     left: 1000px;
     margin-top: 80px;
+}
+
+.container-partners h4{
+    color: #065A82;
+}
+
+.container-partners{
+    position: absolute;
+    left: 350px;
+    margin-top: 150px;
 }
 
 .footer-blok-info h1{
@@ -669,7 +686,7 @@ color: #13B3B6
 }
 
 .footer {
-    margin-top: -1739px;
+    margin-top: -1712px;
 }
 
 .footer-blok-info{
@@ -692,9 +709,28 @@ color: #13B3B6
     margin-top: 40vh;
 }
 
-  
+.container-users{
+    text-align: center;
+    margin-top: 35vh;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
 
 
+.container-users h1{
+    color: #0077CD;
+    margin-top: 50px;
+}
 
+.user-body{
+background-color: #13B3B6;
+margin-top: 5vh;
+}
 
-
+.user-blok{
+    background-color: #ffffff;
+    width: 500px;
+    height: 350px;
+}

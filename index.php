@@ -53,7 +53,7 @@
         <div class="hoofdteksten flex">
             <div class="hoofdtekstpositie flex position">
                 <h1>Home</h1>
-                <h1>Mijn Reis</h1>
+               <a href="login.php"> <h1>Mijn Reis</h1></a>
                 <h1>Informatie</h1>
                 <h1>Hulp</h1>
             </div>
@@ -211,10 +211,11 @@
                             <h1>huur een hotelkamer</h1>
                             <h2>huur bij ETAirways voordelig een hotelkamer</h2>
                         </div>
-                        </div> 
                         <a href="https://www.airbnb.nl/?sem_brand_erf=true&&c=.pi0.pk119549723_5008905443&ghost=true&gad_source=1&gad_campaignid=119549723&gbraid=0AAAAADz55LnfaesBuPhAUXXWQZVndEIVr&gclid=CjwKCAjwx8nCBhAwEiwA_z__04cxFSnwgFNv1-u_w48Dgm3P19bW9s4D1Kq9HxHADBXqoZP_W0C-dRoCS9oQAvD_BwE&gclsrc=aw.ds">
                             <h3>boek uw hotel</h3>
                         </a>
+                        </div> 
+                        
                     </div>
 
 
