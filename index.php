@@ -125,7 +125,7 @@
     
         </div>
 
-
+<div class="php-deals-container">
          <?php
             
                 include('./dbcalls/read.php');
@@ -134,7 +134,7 @@
     echo '<div class="dealsitems-box">';
          echo '<br> <h1></h1>' . $value['dealbestemming'];
          
-         echo '<div class="container-img">';
+         echo '<div class="container-img-php">';
          echo '<br> <img alt=" ' . $value['stad'] . '" src=' . $value['img'] . "></img>";
          echo '</div>';
 
@@ -142,14 +142,9 @@
         echo '<div class="blok-prijs">' . $value['prijs'];
         echo '</div>';
          echo '</div>';
-             }
-                
-        
-
-            
-                
+             }           
          ?>
-
+</div>
 
         </section>
         

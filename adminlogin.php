@@ -62,9 +62,13 @@
             <div class="volgordeborder flex">
                 <h5>Admin</h5>
                 <div class="verticalpadding"></div>
-                <input type="text" id="gebruikersnaam" name="gebruikersnaam" placeholder="Gebruikersnaam" class="noborder">
+             <form method="post" action="./dbcalls/adminchecklogin.php">
+                <input type="text" id="username" name="username" placeholder="Gebruikersnaam"
+                    class="noborder">
                 <div class="verticalpadding2"></div>
                 <input type="text" id="password" name="password" placeholder="Password" class="noborder">
+             <input type="submit" value="login">
+                </form>
             </div>
         </div>
         <div class="loginenadminlogin flex">

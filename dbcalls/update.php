@@ -28,6 +28,7 @@ $stmt->bindParam(":id", $id);
 // Query uitvoeren
 $stmt->execute();
 
+ header(header: 'location: ../admin.php');
 
 
 ?>
