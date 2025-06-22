@@ -63,6 +63,10 @@
                 <div class="bereikbaarvia position">
                     <h3>Wij zijn bereid om u te helpen en bereikbaar via:</h3>
                 </div>
+                    <div class="privacypolicy flex">
+                    <h3>Privacy Policy en algemene voorwaarden:</h3>
+                    <embed src="privacy.pdf" type="">
+                </div>
                 <div class="contact position flex">
                     <div class="emails">
                         <h3>timderijck2@gmail.com</h3>

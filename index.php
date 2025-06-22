@@ -148,14 +148,29 @@
                
             <div class="container-grid">
                 <div class="container-img">
-                    <img src="assets/img/londen.png" alt="">
-                    <img src="assets/img/madrid.png" alt="">
-                    <img src="assets/img/hongkong.png" alt="">
+                    <div class="londen flex directioncol wit">
+                        <img src="assets/img/londen.png" alt="">
+                        <h1>Van historische highlights tot moderne flair: Londen verrast elke keer weer.</h1>
+                    </div>
+                    <div class="madrid flex directioncol wit">
+                        <img src="assets/img/madrid.png" alt="">
+                        <h1>Tapas, kunst en zon: Madrid bruist van energie en cultuur.</h1>
+                    </div>
+                    <div class="hongkong flex directioncol wit">
+                        <img src="assets/img/hongkong.png" alt="">
+                        <h1>Traditie en futurisme komen samen in deze unieke metropool.</h1>
+                    </div>
                 </div>
 
                 <div class="container-img2">
-                    <img src="assets/img/berlijn.png" alt="">
-                    <img src="assets/img/barcelona.png" alt="">
+                    <div class="berlijn flex directioncol wit">
+                        <img src="assets/img/berlijn.png" alt="">
+                        <h1>Vrijheid, cultuur en een rauwe energie maken Berlijn onvergetelijk.</h1>
+                    </div>
+                    <div class="barcelona flex directioncol wit">
+                        <img src="assets/img/barcelona.png" alt="">
+                        <h1>Gaudí, tapas en de Middellandse Zee: Barcelona heeft het allemaal.</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,17 +197,18 @@
                         </div>
                         </div> 
                     </div>
-
-
+                
         </section>
+        <div class="kleinblauwruimte"></div>
+
 
     </main>
 
     <footer class="footer">
-     <div class="footer-blok-info">
+        <div class="footer-blok-info">
             <img src="assets/img/ETAirways.png" alt="">
             <h1>ET Airways</h1>
-     </div>
+        </div>
     </footer>
 </body>
 

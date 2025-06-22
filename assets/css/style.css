@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.wit {
+    color: #FFFFFF;
+}
 
 body{
     color:#065A82 ;
@@ -380,6 +383,7 @@ color: #13B3B6
     background-color:#13B3B6;
     border-radius: 50px;
     margin-top: 100vh;
+    margin-bottom: 40px;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -407,7 +411,9 @@ color: #13B3B6
 }
 
 
-
+.directioncol {
+    flex-direction: column;
+}
 
 .container-img,
 .container-img2 {
@@ -416,6 +422,7 @@ color: #13B3B6
   padding: 20px;
   width: 300px;
   height: 300px;
+  padding-left: 6%;
 }
 
 .container-img {
@@ -495,7 +502,7 @@ color: #13B3B6
     background-color: white;
     height: 250px;
     width: 100%;
-    margin-top: 250vh;
+    margin-top: 220vh;
 }
 
 .footer-blok-info img{
@@ -745,15 +752,25 @@ body {
 }
 
 .hulpzoeken {
-    bottom: 100px;
+    bottom: 20px;
 }
 
 .bereikbaarvia {
-    bottom: 50px;
+    bottom: 10px;
 }
 
 .contact {
     flex-direction: row;
-    top: 50px;
+    top: 20px;
     gap: 50px;
+}
+
+.privacypolicy {
+    flex-direction: column;
+}
+
+.kleinblauwruimte {
+    background-color: #21295C;
+    width: 100%;
+    height: 40px;
 }
