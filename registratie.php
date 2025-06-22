@@ -62,16 +62,21 @@
             <div class="volgordeborder flex">
                 <h5>Registreren</h5>
                 <div class="verticalpadding"></div>
-                <input type="text" id="gebruikersnaam" name="gebruikersnaam" placeholder="Gebruikersnaam" class="noborder">
+
+                        <form method="post" action="./dbcalls/createuser.php">
+                <input type="text" id="username" name="username" placeholder="Gebruikersnaam" class="noborder">
+                <input type="email" id="email" name="email" placeholder="Email" class="noborder" required>
                 <div class="verticalpadding"></div>
                 <input type="text" id="password" name="password" placeholder="Password" class="noborder">
                 <div class="verticalpadding"></div>
                 <input type="text" id="confirmpassword" name="confirmpassword" placeholder="Confirm password" class="noborder">
+                <input type="submit" value="login">
+                </form>
             </div>
         </div>
         <div class="loginenadminlogin flex">
             <div class="loginknop2">
-                <button class="loginknop">Aanmaken</button class="loginknop">
+                   
             </div>
         </div>
     </main>

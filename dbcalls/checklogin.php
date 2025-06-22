@@ -19,5 +19,3 @@ else{
     echo 'verkeerde inlog of wachtwoord';
 }
 var_dump($_POST);
-
-?>
