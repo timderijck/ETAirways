@@ -11,7 +11,7 @@
 </head>
 
 
-<bod>
+<body class="body">
     <div class="revieuw-text">
   <h1>sorry voor het ongemak maar door een technische storing kunnen er geen reviews worden geschreven.</h1>
   </div>  
@@ -45,6 +45,10 @@
          <div class="review">
             <strong>Emile</strong>
             <p>Super goede website mooie php en goed gecodeerd dikke 10 emile de developer heeft zo te zien hard gewerkt</p>
+        </div>
+         <div class="review">
+            <strong>tim</strong>
+            <p>ik zie dat developer tim er niks van bakt volgensmij moest developer emile alles zelf doen zie je ook wel aan de website tim echt totaal nutteloos maar beter dat emile er was om de zaak te redden</p>
         </div>
     </div>
 </div>

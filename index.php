@@ -125,7 +125,14 @@
     
         </div>
 
-<div class="php-deals-container">
+
+
+        </section>
+        
+
+
+        <section class="deals-box-php">
+        <div class="php-deals-container">
          <?php
             
                 include('./dbcalls/read.php');
@@ -145,13 +152,7 @@
              }           
          ?>
 </div>
-
-        </section>
-        
-
-
-
-
+</section>
 
 
         <section class="bekende-bestemingen">
