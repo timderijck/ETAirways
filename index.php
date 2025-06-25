@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
 </head>
 
 <body class="body">
- 
+
     <header class="flex">
         <div class="maatschappijinfo flex">
             <img src="assets/img/ETAirways.png" alt="ETplaatje" height="80" width="80">
@@ -32,27 +33,42 @@
                     </div>
                     <div class="nltekst">
                         <div class="dropdown">
-                            <button class="dropbtn"><h2>Inloggen</h2>
+                            <button class="dropbtn">
+                                <h2>Inloggen</h2>
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a href="registratie.php"><h2>Account aanmaken</h2></a>
-                                <a href="login.php"><h2>Inloggen</h2></a>
-                                <a href="adminlogin.php"><h2>Admin</h2></a>
+                                <a href="registratie.php">
+                                    <h2>Account aanmaken</h2>
+                                </a>
+                                <a href="login.php">
+                                    <h2>Inloggen</h2>
+                                </a>
+                                <a href="adminlogin.php">
+                                    <h2>Admin</h2>
+                                </a>
                             </div>
                         </div>
                     </div>
 
+                </div>
             </div>
-        </div>
-        <div class="hoofdteksten flex">
-            <div class="hoofdtekstpositie flex position indexposition hulpposition">
-                <a href="index.php"><h1>Home</h1></a>
-                <a href="reisinfo.php"><h1>Mijn Reis</h1></a>
-                <a href="info.php"><h1>Informatie</h1></a>
-                <a href="hulp.php"><h1>Hulp</h1></a>
+            <div class="hoofdteksten flex">
+                <div class="hoofdtekstpositie flex position indexposition hulpposition">
+                    <a href="index.php">
+                        <h1>Home</h1>
+                    </a>
+                    
+                        <h1>Mijn Reis</h1>
+                    </a>
+                    <a href="info.php">
+                        <h1>Informatie</h1>
+                    </a>
+                    <a href="hulp.php">
+                        <h1>Hulp</h1>
+                    </a>
+                </div>
             </div>
-        </div>
     </header>
     <main>
 
@@ -61,27 +77,52 @@
         </div>
         <div class="vertrekblok flex position">
             <div class="witteboxes flex position">
-                <div class="wittebox1 flex">
-                    <div class="omgedraaidimg">
+                <div class="dropdownclick flex">
+                    <div class="omgedraaidvliegtuig">
                         <img src="assets/img/vliegtuigomgedraaid.png" alt="" width="20" height="15">
                     </div>
-                    <h2>Retourreis</h2>
-                    <div class="dropdownbox">
+                    <button onclick="myFunction()" class="dropbtnclick wittebox1 witteboxes">
+                        <h2 id="reisTypeText">Retourreis</h2>
+                    </button>
+                    <div id="myDropdownOnClick" class="dropdown-content-on-click">
+                        <div onclick="setReisType('Retourreis')">
+                            <h2>Retourreis</h2>
+                        </div>
+                        <div onclick="setReisType('Enkele reis')">
+                            <h2>Enkele reis</h2>
+                        </div>
+                    </div>
+                    <div class="dropdownimg">
                         <img src="assets/img/dropdown.png" alt="" width="15" height="13">
                     </div>
                 </div>
-                <div class="wittebox2 wittebox1 flex">
-                    <div class="omgedraaidimg extraruimte">
-                        <img src="assets/img/opstijgen.png" alt="" width="20" height="15">
+                <form action="dbcalls/search.php" method="GET" onsubmit="return validate()" class="flex">
+                    <div class="wittebox2 wittebox1 flex">
+                        <div class="omgedraaidimg extraruimte">
+                            <div class="opstijgenenzoeken flex">
+                                <div class="opstijgenafbeelding">
+                                    <img src="assets/img/opstijgen.png" alt="opstijgen" width="20" height="15">
+                                </div>
+                                <input type="text" id="searchresult" name="searchresult" placeholder="Bestemming"
+                                    class="h2class deconone zoekbalk searchpos">
+                            </div>
+                        </div>
                     </div>
-                    <h2>Vertrek vanaf</h2>
-                </div>
-                <div class="wittebox3 wittebox2 wittebox1 flex">
-                    <div class="omgedraaidimg extraruimte">
-                        <img src="assets/img/vliegtuig.png" alt="" width="20" height="15">
+                    <div class="wittebox3 wittebox2 wittebox1 flex paddingklein">
+                        <div class="omgedraaidimg extraruimte">
+                            <img src="assets/img/vliegtuig.png" alt="" width="20" height="15">
+                        </div>
+                        <input type="text" placeholder="Aankomst op" class="h2class deconone">
                     </div>
-                    <h2>Aankomst op</h2>
-                </div>
+
+                    <div class="loginknop wittebox1 paddingmedium">
+                        <div class="center position">
+                            <input type="submit" value="Zoeken" id="zoekknop">
+                        </div>
+                    </div>
+
+                </form>
+
             </div>
         </div>
         <div class="dealsbox position"></div>
@@ -107,7 +148,7 @@
 
         <section class="bestemmingen-deals">
 
-        <div class="container-deals-vluchten">
+            <div class="container-deals-vluchten">
                 <div class="deals-bestemmingen-blok">
                     <div class="dealstekstblok position">
                         <h1>Bestemmingen & Deals</h1>
@@ -118,20 +159,20 @@
                 </div>
             </div>
 
-            
-            <div class="container-deals-php">
-            <?php
 
-                
-            ?>
-        </div>
+            <div class="container-deals-php">
+                <?php
+
+
+                ?>
+            </div>
 
 
 
 
 
         </section>
-        
+
 
 
 
@@ -145,7 +186,7 @@
                     <h1>Bekende Bestemmingen</h1>
                 </div>
             </div>
-               
+
             <div class="container-grid">
                 <div class="container-img">
                     <div class="londen flex directioncol wit">
@@ -173,7 +214,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
         </section>
 
         <section class="verhuur">
@@ -185,19 +226,19 @@
                         <h1>Huur een auto</h1>
                         <h2>Huur bij ETAirways voordelig een auto!</h2>
                     </div>
-                       </div> 
-                </div>                                                                                                                                        
+                </div>
+            </div>
 
-                    <div class="blok-hotellverhuur">
-                    <div class="container-hotel">
-                        <img src="assets/img/hotel.png" alt="" width="150px" height="150px">
-                        <div class="huur-een-kamer">
-                            <h1>Huur een hotelkamer</h1>
-                            <h2>Huur bij ETAirways voordelig een hotelkamer!</h2>
-                        </div>
-                        </div> 
+            <div class="blok-hotellverhuur">
+                <div class="container-hotel">
+                    <img src="assets/img/hotel.png" alt="" width="150px" height="150px">
+                    <div class="huur-een-kamer">
+                        <h1>Huur een hotelkamer</h1>
+                        <h2>Huur bij ETAirways voordelig een hotelkamer!</h2>
                     </div>
-                
+                </div>
+            </div>
+
         </section>
         <div class="kleinblauwruimte"></div>
 
@@ -211,5 +252,7 @@
         </div>
     </footer>
 </body>
+<script src="dropdownonclick.js"></script>
+<script src="validate.js"></script>
 
 </html>

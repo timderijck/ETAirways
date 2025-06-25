@@ -48,7 +48,7 @@
         <div class="hoofdteksten flex">
             <div class="hoofdtekstpositie flex position indexposition hulpposition">
                 <a href="index.php"><h1>Home</h1></a>
-                <a href="reisinfo.php"><h1>Mijn Reis</h1></a>
+                <h1>Mijn Reis</h1>
                 <a href="info.php"><h1>Informatie</h1></a>
                 <a href="hulp.php"><h1>Hulp</h1></a>
             </div>

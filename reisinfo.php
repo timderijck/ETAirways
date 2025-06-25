@@ -56,7 +56,7 @@
                 <a href="index.php">
                     <h1>Home</h1>
                 </a>
-                <a href="reisinfo.php">
+                
                     <h1>Mijn Reis</h1>
                 </a>
                 <a href="info.php">
