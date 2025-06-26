@@ -2,11 +2,11 @@
 $servername = "mariadb";
 $username = "admin";
 $password = "admin";
-$dbname = "ETAirways";
+$dbname = "database";
  
  
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=ETAirways", $username, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=database", $username, $password);
  
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -15,4 +15,3 @@ try {
   echo "Connection failed: " . $e->getMessage();
 }
 ?>
- 

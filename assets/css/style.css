@@ -7,8 +7,8 @@
     color: #FFFFFF;
 }
 
-body{
-    color:#065A82 ;
+body {
+    color: #065A82;
 }
 
 
@@ -26,6 +26,8 @@ h2 {
     font-family: 'Quicksand';
     font-size: small;
     font-weight: 500;
+    position: relative;
+    top: 5px;
 }
 
 h3 {
@@ -340,10 +342,10 @@ main {
 
 }
 
-.deals-bestemmingen-blok{
-  height: 63px;
+.deals-bestemmingen-blok {
+    height: 63px;
     width: 425px;
-    background-color:#13B3B6;
+    background-color: #13B3B6;
     border-radius: 50px;
     margin-top: 40vh;
     text-align: center;
@@ -355,23 +357,23 @@ main {
     top: 15px;
 }
 
-.deals-bestemmingen-blok h1{
+.deals-bestemmingen-blok h1 {
     text-align: center;
     margin-top: 30px;
     color: white;
 }
 
-.container-deals-vluchten{
+.container-deals-vluchten {
     position: absolute;
     right: 36%;
 }
 
 .promodeals {
-   left: 15px; 
+    left: 15px;
 }
 
-.bestemmingen-deals h1{
-color: #13B3B6
+.bestemmingen-deals h1 {
+    color: #13B3B6
 }
 
 
@@ -383,10 +385,10 @@ color: #13B3B6
 
 
 
-.bekende-bestemmingen-blok{
+.bekende-bestemmingen-blok {
     height: 63px;
     width: 425px;
-    background-color:#13B3B6;
+    background-color: #13B3B6;
     border-radius: 50px;
     margin-top: 100vh;
     margin-bottom: 40px;
@@ -394,22 +396,22 @@ color: #13B3B6
 }
 
 
-.bekende-bestemmingen-blok h1{
+.bekende-bestemmingen-blok h1 {
     text-align: center;
     margin-top: 15px;
     color: white;
 }
 
 
-    .bestemmingen-deals h1{
-        color: white;
-    }
+.bestemmingen-deals h1 {
+    color: white;
+}
 
 
 
 
 
-.blok-container{
+.blok-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,41 +425,51 @@ color: #13B3B6
 
 .container-img,
 .container-img2 {
-  display: grid;
-  gap: 20px;
-  padding: 20px;
-  width: 300px;
-  height: 300px;
-  padding-left: 6%;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    padding-left: 6%;
 }
 
 .container-img {
-  grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .container-img2 {
-  grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.blok-autoverhuur{
-      width: 300px;
-  height: 300px;
-  background-color: #065A82;
-  border-radius: 30px;
+.blok-autoverhuur {
+    width: 300px;
+    height: 300px;
+    background-color: #065A82;
+    border-radius: 30px;
 }
 
-.blok-hotellverhuur{
-      width: 300px;
-  height: 300px;
-  background-color: #065A82;
-  border-radius: 30px;
-      display: flex;
+.blok-autoverhuur h3 {
+    text-align: center;
+
+}
+
+.blok-hotellverhuur {
+    width: 300px;
+    height: 300px;
+    background-color: #065A82;
+    border-radius: 30px;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
 
-.verhuur{
+
+.blok-hotellverhuur h3 {
+    text-align: center;
+}
+
+.verhuur {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -465,7 +477,7 @@ color: #13B3B6
     margin-top: 100px;
 }
 
-.huur-een-auto{
+.huur-een-auto {
     width: 250px;
     height: 100px;
     background-color: #13B3B6;
@@ -477,7 +489,7 @@ color: #13B3B6
 
 
 
-.container-auto{
+.container-auto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -486,7 +498,7 @@ color: #13B3B6
 
 
 
-.container-hotel{
+.container-hotel {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,8 +506,8 @@ color: #13B3B6
 }
 
 
-.huur-een-kamer{
-        width: 250px;
+.huur-een-kamer {
+    width: 250px;
     height: 100px;
     background-color: #13B3B6;
     border-radius: 35px;
@@ -504,14 +516,14 @@ color: #13B3B6
     font-size: 15px;
 }
 
-.footer-blok-info{
+.footer-blok-info {
     background-color: white;
     height: 250px;
     width: 100%;
     margin-top: 220vh;
 }
 
-.footer-blok-info img{
+.footer-blok-info img {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -519,14 +531,42 @@ color: #13B3B6
     margin-top: 70px;
 }
 
-.footer-blok-info h1{
-  font-size: 50px;
+
+.footer-blok-info h3 {
+    color: #065A82;
+
+}
+
+.email-container {
+    position: absolute;
+    left: 1000px;
+    margin-top: 150px;
+}
+
+.telefoon-container {
+    position: absolute;
+    left: 1000px;
+    margin-top: 80px;
+}
+
+.container-partners h4 {
+    color: #065A82;
+}
+
+.container-partners {
+    position: absolute;
+    left: 350px;
+    margin-top: 150px;
+}
+
+.footer-blok-info h1 {
+    font-size: 50px;
     color: #0077CD;
     position: absolute;
     left: 300px;
-        margin-top: 90px;
+    margin-top: 90px;
 
-    
+
 }
 
 .pijlteruglogin {
@@ -627,51 +667,51 @@ color: #13B3B6
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
-  right: 15px;
-  bottom: 6px;
-  margin-right: -50px;
+    position: relative;
+    display: inline-block;
+    right: 15px;
+    bottom: 6px;
+    margin-right: -50px;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 6px 8px;
-  background-color: #FFFFFF;
-  font-family: 'Quicksand';
-  cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 6px 8px;
+    background-color: #FFFFFF;
+    font-family: 'Quicksand';
+    cursor: pointer;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #13B3B6;
+    background-color: #13B3B6;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .reisinfoachtergrond {
@@ -714,12 +754,34 @@ body {
     justify-content: flex-end;
     flex-direction: column;
 }
+
 .footer {
-    margin-top: -1739px;
+    margin-top: -1712px;
+}
+
+.footer-blok-info {
+    margin-top: 250vh;
+}
+
+.boekenknop {
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 65px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 200px;
+    position: relative;
+    bottom: 30px;
+    left: 54%;
 }
 
 
-.body-admin{
+.body-admin {
     background-image: url("../img/adminachtergrond.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -782,37 +844,41 @@ body {
 }
 
 .dropbtnclick {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdownclick {
-  position: relative;
-  display: inline-block;
-  flex-direction: row;
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
 }
 
 .dropdown-content-on-click {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 15px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content-on-click a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.dropdown-content-on-click a:hover {background-color: #ddd;}
+.dropdown-content-on-click a:hover {
+    background-color: #ddd;
+}
 
-.show {display:block;}
+.show {
+    display: block;
+}
 
 .omgedraaidvliegtuig {
     position: absolute;
@@ -841,10 +907,180 @@ body {
     gap: 25px;
 }
 
+.zoekknopsubmit {
+    bottom: 20px;
+}
+
+.opstijgenafbeelding {
+    top: 25px;
+}
+
 .paddingklein {
     margin-left: 32px;
 }
 
 .paddingmedium {
     margin-left: 100px;
+}
+
+.container-users {
+    text-align: center;
+    margin-top: 35vh;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.container-users h1 {
+    color: #0077CD;
+    margin-top: 50px;
+}
+
+.user-body {
+    background-color: #13B3B6;
+    margin-top: 5vh;
+}
+
+.user-blok {
+    background-color: #ffffff;
+    width: 500px;
+    height: 350px;
+}
+
+.deals-box-php {
+    justify-content: center;
+    margin-top: 50vh;
+    flex-direction: row;
+}
+
+.prijsnaareindebox {
+    position: relative;
+    left: 230px;
+}
+
+.php-deals-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-height: 150px;
+}
+
+.dealsitems-box {
+    height: 125px;
+    width: 600px;
+    background-color: #9EB3C2;
+    margin-top: 20px;
+    flex-direction: row;
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.container-img-php img {
+    border-radius: 12px;
+}
+
+.verschuivingrechts {
+    position: relative;
+    left: 30px;
+}
+
+.kleinverschuivingrechts {
+    position: relative;
+    left: 15px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.onderflex {
+    justify-content: flex-end;
+}
+
+.kleinmarginterug {
+    margin-left: -72px;
+}
+
+.kleinpaddingboven {
+    margin-top: 15px;
+}
+
+.kleinpaddingonder {
+    margin-bottom: 5px;
+}
+
+.mediumpaddingonder {
+    margin-bottom: 20px;
+}
+
+.dealsitems-box img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.container-prijs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+
+}
+
+.review-form,
+.review-list {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.revieuw-text {
+    text-align: center;
+}
+
+.huurautopos {
+    position: relative;
+    right: 32%;
+    top: 275px;
+}
+
+.footersearch {
+    margin-top: -1977px;
 }

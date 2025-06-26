@@ -3,8 +3,10 @@ include("./conn.php");
 
 $id = $_POST['ID'];
 
-$stmt = $conn->prepare("DELETE FROM menuitems WHERE ID=:ID");
-$stmt->bindParam(":ID", $id);
+$stmt = $conn->prepare("DELETE FROM deals WHERE id = :id");
+$stmt->bindParam(":id", $id); // zelfde als in de query
 $stmt->execute();
 
-header('Location: ../admin.php');
+
+exit;
+?>

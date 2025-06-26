@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+include('./dbcalls/conn.php');
+?>
+
 <head>
 
     <meta charset="UTF-8">
@@ -53,22 +57,24 @@
 
                 </div>
             </div>
-            <div class="hoofdteksten flex">
-                <div class="hoofdtekstpositie flex position indexposition hulpposition">
-                    <a href="index.php">
-                        <h1>Home</h1>
-                    </a>
-                    
-                        <h1>Mijn Reis</h1>
-                    </a>
-                    <a href="info.php">
-                        <h1>Informatie</h1>
-                    </a>
-                    <a href="hulp.php">
-                        <h1>Hulp</h1>
-                    </a>
-                </div>
+
+        </div>
+        <div class="hoofdteksten flex">
+            <div class="hoofdtekstpositie flex position indexposition hulpposition">
+                <a href="index.php">
+                    <h1>Home</h1>
+                </a>
+
+                <h1>Mijn Reis</h1>
+                </a>
+                <a href="info.php">
+                    <h1>Informatie</h1>
+                </a>
+                <a href="hulp.php">
+                    <h1>Hulp</h1>
+                </a>
             </div>
+        </div>
     </header>
     <main>
 
@@ -96,11 +102,11 @@
                         <img src="assets/img/dropdown.png" alt="" width="15" height="13">
                     </div>
                 </div>
-                <form action="dbcalls/search.php" method="GET" onsubmit="return validate()" class="flex">
+                <form action="./dbcalls/search.php" method="GET" onsubmit="return validate()" class="flex">
                     <div class="wittebox2 wittebox1 flex">
                         <div class="omgedraaidimg extraruimte">
                             <div class="opstijgenenzoeken flex">
-                                <div class="opstijgenafbeelding">
+                                <div class="opstijgenafbeelding flex position">
                                     <img src="assets/img/opstijgen.png" alt="opstijgen" width="20" height="15">
                                 </div>
                                 <input type="text" id="searchresult" name="searchresult" placeholder="Bestemming"
@@ -116,7 +122,7 @@
                     </div>
 
                     <div class="loginknop wittebox1 paddingmedium">
-                        <div class="center position">
+                        <div class="center zoekknopsubmit">
                             <input type="submit" value="Zoeken" id="zoekknop">
                         </div>
                     </div>
@@ -155,7 +161,7 @@
                     </div>
                 </div>
                 <div class="promodeals position">
-                    <h1>Vluchten ET holidays Promo-Deals</h1>
+                    <h1>Vluchten, ET holidays, Promo-Deals</h1>
                 </div>
             </div>
 
@@ -172,12 +178,38 @@
 
 
         </section>
+        <section class="deals-box-php flex">
+            <div class="php-deals-container flex">
+                <?php
 
+                include('./dbcalls/read.php');
 
+                foreach ($result as $value) {
+                    echo '<div class="dealsitems-box flex">';
 
+                    echo '<div class="container-img-php flex kleinpaddingboven kleinverschuivingrechts">';
+                    echo '<br> <img alt=" ' . $value['stad'] . '" src=' . $value['img'] . "></img>";
+                    echo '</div>';
+                    echo '<div class="container-img-php flex kleinpaddingboven verschuivingrechts">';
+                    echo '<br> <h1></h1>' . $value['dealbestemming'];
+                    echo '</div>';
 
+                    echo '<div class="container-img-php column flex onderflex kleinmarginterug mediumpaddingonder verschuivingrechts">';
+                    echo '<br> <h1></h1>(' . $value['stad'] . ')';
+                    echo '</div>';
 
+                    echo '<div class="container-prijs prijsnaareindebox flex">';
+                    echo '<div class="blok-prijs">' . 'vanaf EUR ' . $value['prijs'];
+                    echo '</div>';
+                    echo '</div>';
 
+                    echo '<div class="boekenknop flex">';
+                    echo '<h2>Boeken</h2>';
+                    echo '</div>';
+                }
+                ?>
+            </div>
+        </section>
 
         <section class="bekende-bestemingen">
 
@@ -228,28 +260,40 @@
                     </div>
                 </div>
             </div>
+            <div class="huurautopos">
+                <a
+                    href="https://www.rentalcars.com/?affiliateCode=google&cor=nl&label=generic:mdzNTSnISTPZcxgBtGgLKf3Q:tyS:cr204733937453:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-326914778:lp9064967:li:dec:dm:ws&gad_source=1&gad_campaignid=186113716&gbraid=0AAAAAD9RW4sPxMOpVXTOFdLi1cVmexHR1&gclid=CjwKCAjwx8nCBhAwEiwA_z__0zZgCuNR7uwz2rm914TCNFEZ7Kw5cjqd7eMQMK5cixwXhN_8zBf-pRoCt90QAvD_BwE">
+                    <h3>huur hier een auto</h3>
+                </a>
+            </div>
+            </div>
 
             <div class="blok-hotellverhuur">
                 <div class="container-hotel">
                     <img src="assets/img/hotel.png" alt="" width="150px" height="150px">
                     <div class="huur-een-kamer">
-                        <h1>Huur een hotelkamer</h1>
-                        <h2>Huur bij ETAirways voordelig een hotelkamer!</h2>
+                        <h1>huur een hotelkamer</h1>
+                        <h2>huur bij ETAirways voordelig een hotelkamer</h2>
                     </div>
+                    <a
+                        href="https://www.airbnb.nl/?sem_brand_erf=true&&c=.pi0.pk119549723_5008905443&ghost=true&gad_source=1&gad_campaignid=119549723&gbraid=0AAAAADz55LnfaesBuPhAUXXWQZVndEIVr&gclid=CjwKCAjwx8nCBhAwEiwA_z__04cxFSnwgFNv1-u_w48Dgm3P19bW9s4D1Kq9HxHADBXqoZP_W0C-dRoCS9oQAvD_BwE&gclsrc=aw.ds">
+                        <h3>boek uw hotel</h3>
+                    </a>
                 </div>
+            </div>
+            </div>
             </div>
 
         </section>
         <div class="kleinblauwruimte"></div>
-
+        <?php
+        include('./includes/footer.php')
+            ?>
 
     </main>
 
     <footer class="footer">
-        <div class="footer-blok-info">
-            <img src="assets/img/ETAirways.png" alt="">
-            <h1>ET Airways</h1>
-        </div>
+
     </footer>
 </body>
 <script src="dropdownonclick.js"></script>
