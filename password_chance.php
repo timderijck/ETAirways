@@ -9,15 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
-<body class="user-body">
-    <div class="container-users">
-        <div class="user-blok">
-    <a href="mijn-reis.php"><h1>Naar mijn reis</h1></a>
-    <a href="revieuw.php"><h1>laat een revieuw achter</h1></a>
-    <a href="index.php"><h1>terug naar home</h1></a>
-    <a href="update_password.php"><h1>verander uw wachtwoord</h1></a>
-</div>
-</div>
+<body class="body-5">
+    <a href="index.php">terug naar home</a>
+
+<h1>u heeft succesvol uw wachtwoord veranderd</h1>
 </body>
-<?php include('./includes/footer.php'); ?>
 </html>

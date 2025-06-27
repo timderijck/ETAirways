@@ -10,7 +10,7 @@ $img = $_POST['img'] ?? null;
 $prijs = $_POST['prijs'] ?? null;
 $stad = $_POST['stad'] ?? null;
 
-// Debug-output
+
 echo 'Dit is de bestemming: ' . $dealbestemming . ' <<<<<';
 
 // Check of alle verplichte velden aanwezig zijn
@@ -27,7 +27,7 @@ $stmt->bindParam(":dealbestemming", $dealbestemming);
 $stmt->bindParam(":img", $img);
 $stmt->bindParam(":prijs", $prijs);
 $stmt->bindParam(":stad", $stad);
-
+    
 $stmt->execute();
 
 

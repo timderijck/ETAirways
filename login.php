@@ -31,13 +31,20 @@
                     </div>
                     <div class="nltekst">
                         <div class="dropdown">
-                            <button class="dropbtn"><h2>Inloggen</h2>
+                            <button class="dropbtn">
+                                <h2>Inloggen</h2>
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a href="registratie.php"><h2>Account aanmaken</h2></a>
-                                <a href="login.php"><h2>Inloggen</h2></a>
-                                <a href="adminlogin.php"><h2>Admin</h2></a>
+                                <a href="registratie.php">
+                                    <h2>Account aanmaken</h2>
+                                </a>
+                                <a href="login.php">
+                                    <h2>Inloggen</h2>
+                                </a>
+                                <a href="adminlogin.php">
+                                    <h2>Admin</h2>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -64,11 +71,10 @@
                 <div class="verticalpadding"></div>
 
                 <form method="post" action="./dbcalls/checklogin.php">
-                <input type="text" id="username" name="username" placeholder="Gebruikersnaam"
-                    class="noborder">
-                <div class="verticalpadding2"></div>
-                <input type="text" id="password" name="password" placeholder="Password" class="noborder">
-             <input type="submit" value="login">
+                    <input type="text" id="username" name="username" placeholder="Gebruikersnaam" class="noborder">
+                    <div class="verticalpadding2"></div>
+                    <input type="text" id="password" name="password" placeholder="Password" class="noborder">
+                    <input type="submit" value="login">
                 </form>
             </div>
         </div>
@@ -79,8 +85,8 @@
                 </a>
             </ul>
             <div class="loginknop">
-                
-                
+
+
             </div>
         </div>
     </main>

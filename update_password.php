@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
-<body class="user-body">
-    <div class="container-users">
-        <div class="user-blok">
-    <a href="mijn-reis.php"><h1>Naar mijn reis</h1></a>
-    <a href="revieuw.php"><h1>laat een revieuw achter</h1></a>
-    <a href="index.php"><h1>terug naar home</h1></a>
-    <a href="update_password.php"><h1>verander uw wachtwoord</h1></a>
+<body class="appels">
+<h1>verander hier uw wachtwoord</h1>
+<div class="container-change">
+    <form method="post" action="./dbcalls/update-password.php">
+    <input type="text" id="username" name="username" placeholder="Gebruikersnaam" class="noborder">
+    <div class="verticalpadding2"></div>
+    <input type="text" id="password" name="password" placeholder="Password" class="noborder">
+    <input type="submit" value="verander">
+</form>
 </div>
-</div>
+
 </body>
-<?php include('./includes/footer.php'); ?>
+
 </html>
+
+
+

@@ -10,7 +10,7 @@
 </head>
 
 <h1>admin</h1>
-
+<a href="index.php">terug naar de index</a>
 <form method="POST" action="./dbcalls/create.php">
     <label>Bestemming:
         <input type="text" name="dealbestemming" required>

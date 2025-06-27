@@ -216,13 +216,13 @@
 
 
         </section>
- <?php include('./includes/footer.php'); ?>
+   <?php include('./includes/footer.php'); ?>
     </main>
 
   
 
     <footer>
-   
+ 
     </footer>
 </body>
 

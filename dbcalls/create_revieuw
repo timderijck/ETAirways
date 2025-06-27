@@ -1,0 +1,20 @@
+<?php
+include("./conn.php");
+
+
+
+
+$revieuw = $_POST['revieuw'] ?? '';
+$username = $_POST['username'] ?? '';
+
+$sql = 'INSERT INTO revieuws (revieuw, username) VALUES (:revieuw, :username)';
+$stmt = $conn->prepare($sql);
+
+$stmt->bindParam(':revieuw', $revieuw);
+$stmt->bindParam(':username', $username);
+
+$stmt->execute();
+
+header(header: 'Location: ../revieuw.php');
+exit;
+?>

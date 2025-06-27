@@ -1,5 +1,4 @@
 
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -17,38 +16,42 @@
   </div>  
   <div class="review-form">
         <h2>Laat een review achter</h2>
-        <form method="post" action="review.php">
-            <label for="naam">Naam:</label>
-            <input type="text" id="naam" name="naam" required>
 
-            <label for="review">Review:</label>
-            <textarea id="review" name="review" rows="5" required></textarea>
+  <form method="post" action="./dbcalls/create_review.php">
+    <label for="username">Naam:</label>
+    <input type="text" id="username" name="username" required>
 
-            <input type="submit" value="Verstuur">
-        </form>
+    <label for="review">Review:</label>
+    <input type="text" id="review" name="review" required>
+
+    <input type="submit" value="Verstuur">
+</form>
+
     </div>
 
 
-    <div class="container-revieuw">
-    <div class="review-list">
-        <h2>Beoordelingen</h2>
+ <?php
+$reviews = [
+    ['name' => 'Anna', 'text' => 'Super goede service en vriendelijke medewerkers!'],
+    ['name' => 'Mark', 'text' => 'Heel tevreden met mijn ervaring. Aanrader!'],
+    ['name' => 'Emile', 'text' => 'Super goede website mooie php en goed gecodeerd dikke 10 emile de developer heeft zo te zien hard gewerkt'],
+];
 
-        <!-- Simpele voorbeeldreviews -->
-        <div class="review">
-            <strong>Anna</strong>
-            <p>Super goede service en vriendelijke medewerkers!</p>
-        </div>
-        <div class="review">
-            <strong>Mark</strong>
-            <p>Heel tevreden met mijn ervaring. Aanrader!</p>
-        </div>
-         <div class="review">
-            <strong>Emile</strong>
-            <p>Super goede website mooie php en goed gecodeerd dikke 10 emile de developer heeft zo te zien hard gewerkt</p>
-        </div>
-    </div>
-</div>
+echo '<div class="container-revieuw">';
+echo '<div class="review-list">';
+echo '<h2>Beoordelingen</h2>';
 
+foreach ($reviews as $revieuw) {
+    echo '<div class="review">';
+    echo '<b>' . $revieuw['name'] . '</b>';
+    echo '<p>' . $revieuw['text'] . '</p>';
+    echo '</div>';
+}
+
+echo '</div>';
+echo '</div>';
+
+?>
 
 </body>
 </html>

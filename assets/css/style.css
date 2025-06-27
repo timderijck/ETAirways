@@ -715,12 +715,11 @@ color: #13B3B6
 
 .container-users h1{
     color: #0077CD;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .user-body{
 background-color: #13B3B6;
-margin-top: 5vh;
 }
 
 .user-blok{
@@ -730,26 +729,6 @@ margin-top: 5vh;
 }
 
 
-
-.deals-box-php{
-           display: flex;
-        justify-content: center;
-        width: 46vw;
-        flex-wrap: wrap;
-margin-top: 50vh;
-}
-
-.dealsitems-box{
-    height: 125px;
-    width: 600px;
-    background-color: #9EB3C2;
-    margin-top: 50px;
-
-}
-
-.container-img-php{
-
-}
 
 .container-prijs{
   display: flex;
@@ -796,4 +775,37 @@ justify-content: flex-end;
 
       .revieuw-text{
         text-align:center ;
+      }
+
+      .container-change{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+      }
+
+      .appels{
+        background-color: #065A82;
+      }
+
+      .appels h1{
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 30vh;
+      }
+
+      .body-5{
+                background-color: #065A82;
+      }
+
+      .body-5 h1{
+        color: #FFFFFF;
+      }
+
+      .body-5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 40vh;
       }

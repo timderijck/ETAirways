@@ -7,6 +7,7 @@ $stmt = $conn->prepare("DELETE FROM deals WHERE id = :id");
 $stmt->bindParam(":id", $id); // zelfde als in de query
 $stmt->execute();
 
+    header(header: 'location: ../admin.php');
 
 exit;
 ?>

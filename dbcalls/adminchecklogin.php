@@ -8,17 +8,13 @@ $stmt->bindParam(":password", $_POST['password']);
 $stmt->execute();
 $result = $stmt->fetch();
 
-
-
-if ($result){
-     
+if ($result && $result['id'] == 1) {
     $_SESSION['username'] = $result['username'];
-    header(header: 'location: ../admin.php');
-
+    header('Location: ../admin.php');
+    exit;
 }
-else{
+else {
     echo 'verkeerde inlog of wachtwoord';
 }
 var_dump($_POST);
-
 ?>
