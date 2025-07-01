@@ -69,3 +69,20 @@ foreach ($result as $value) {
 }
 
 ?>
+
+
+
+<?php
+// Check of data binnenkomt via POST
+if (isset($_POST['boeking']) && isset($_POST['plek'])) {
+    $boeking = $_POST['boeking'];
+    $plek = $_POST['plek'];
+
+    echo "Boeking: " . $boeking . "<br>";
+    echo "Plek: " . $plek . "<br>";
+
+    echo "Update boeking";
+} else {
+    echo "Geen boekingsgegevens ontvangen.";
+}
+?>
