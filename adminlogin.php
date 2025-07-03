@@ -61,7 +61,6 @@
         <div class="logintekstborder flex">
             <div class="volgordeborder flex">
                 <h5>Admin</h5>
-                <div class="verticalpadding"></div>
              <form method="post" action="./dbcalls/adminchecklogin.php">
                 <input type="text" id="username" name="username" placeholder="Gebruikersnaam"
                     class="noborder">
@@ -71,11 +70,7 @@
                 </form>
             </div>
         </div>
-        <div class="loginenadminlogin flex">
-            <div class="loginknop2">
-                <button class="loginknop">Login</button class="loginknop">
-            </div>
-        </div>
+        <div class="loginenadminlogin flex"></div>
     </main>
 
     <footer>

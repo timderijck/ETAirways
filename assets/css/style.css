@@ -741,8 +741,8 @@ body {
 }
 
 .reisinformatieborder {
-    height: 350px;
-    width: 900px;
+    height: 150px;
+    width: 500px;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -777,7 +777,8 @@ body {
     margin-left: 200px;
     position: relative;
     bottom: 30px;
-    left: 54%;
+    left: 123%;
+    cursor: pointer;
 }
 
 
@@ -1081,6 +1082,15 @@ input[type="submit"] {
     top: 275px;
 }
 
-.footersearch {
-    margin-top: -1977px;
+.inputaankomst {
+    padding-left: 150px;
+}
+
+.inputaankomst::placeholder {
+    padding-left: 150px; 
+    text-indent: 150px;
+}
+
+.inputaankomst::placeholder {
+    right: 150px;
 }

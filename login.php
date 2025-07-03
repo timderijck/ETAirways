@@ -66,7 +66,7 @@
                 <form method="post" action="./dbcalls/checklogin.php">
                 <input type="text" id="username" name="username" placeholder="Gebruikersnaam"
                     class="noborder">
-                <div class="verticalpadding2"></div>
+                
                 <input type="text" id="password" name="password" placeholder="Password" class="noborder">
              <input type="submit" value="login">
                 </form>
@@ -78,10 +78,6 @@
                     <h6>Login als admin</h6>
                 </a>
             </ul>
-            <div class="loginknop">
-                
-                
-            </div>
         </div>
     </main>
 

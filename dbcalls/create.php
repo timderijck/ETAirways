@@ -18,7 +18,6 @@ if (!$img || !$prijs || !$stad) {
     die("Fout: één of meer verplichte velden ontbreken (img, prijs, stad).");
 }
 
-// SQL-query met alle velden
 $sql = 'INSERT INTO deals (dealbestemming, img, prijs, stad)
         VALUES (:dealbestemming, :img, :prijs, :stad)';
 $stmt = $conn->prepare($sql);

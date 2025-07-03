@@ -12,7 +12,7 @@
 <body class="user-body">
     <div class="container-users">
         <div class="user-blok">
-    <a href="mijn-reis.php"><h1>Naar mijn reis</h1></a>
+    <a href="reisinfo.php"><h1>Naar mijn reis</h1></a>
     <a href="revieuw.php"><h1>laat een revieuw achter</h1></a>
     <a href="index.php"><h1>terug naar home</h1></a>
 </div>

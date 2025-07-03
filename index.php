@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,36 +40,51 @@ include('./dbcalls/conn.php');
                         <img src="assets/img/inlog.png" alt="inlog" width="32" height="32">
                     </div>
                     <div class="nltekst">
+                        <?php
+                        if (session_status() === PHP_SESSION_NONE) {
+                            session_start();
+                        }
+                        ?>
                         <div class="dropdown">
-                            <button class="dropbtn">
-                                <h2>Inloggen</h2>
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="registratie.php">
-                                    <h2>Account aanmaken</h2>
-                                </a>
-                                <a href="login.php">
+                            <?php if (isset($_SESSION['username']) || isset($_SESSION['admin'])): ?>
+                                <button class="dropbtn">
+                                    <h2>Uitloggen</h2>
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="logout.php">
+                                        <h2>Uitloggen</h2>
+                                    </a>
+                                </div>
+                            <?php else: ?>
+                                <button class="dropbtn">
                                     <h2>Inloggen</h2>
-                                </a>
-                                <a href="adminlogin.php">
-                                    <h2>Admin</h2>
-                                </a>
-                            </div>
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="registratie.php">
+                                        <h2>Account aanmaken</h2>
+                                    </a>
+                                    <a href="login.php">
+                                        <h2>Inloggen</h2>
+                                    </a>
+                                    <a href="adminlogin.php">
+                                        <h2>Admin</h2>
+                                    </a>
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
         <div class="hoofdteksten flex">
             <div class="hoofdtekstpositie flex position indexposition hulpposition">
                 <a href="index.php">
                     <h1>Home</h1>
                 </a>
-
-                <h1>Mijn Reis</h1>
+                <a href="reisinfo.php">
+                    <h1>Mijn Reis</h1>
                 </a>
                 <a href="info.php">
                     <h1>Informatie</h1>
@@ -118,7 +137,10 @@ include('./dbcalls/conn.php');
                         <div class="omgedraaidimg extraruimte">
                             <img src="assets/img/vliegtuig.png" alt="" width="20" height="15">
                         </div>
-                        <input type="text" placeholder="Aankomst op" class="h2class deconone">
+                        <div class="inputaankomst position flex">
+                            <input type="text" id="destination" name="destination" placeholder="Aankomst op"
+                                class="h2class deconone placeholder">
+                        </div>
                     </div>
 
                     <div class="loginknop wittebox1 paddingmedium">
@@ -138,7 +160,7 @@ include('./dbcalls/conn.php');
             <h3>Bekijk dan nu onze vakantie <br>deals!</h3>
         </div>
         <div class="naardeals flex position">
-            <h4><a href="reisinfo.php">Naar Deals →</a></h4>
+            <h4><a href="info.php">Naar Deals →</a></h4>
         </div>
         <div class="blauweboxes flex position">
             <div class="blauwebox flex">
@@ -203,9 +225,12 @@ include('./dbcalls/conn.php');
                     echo '</div>';
                     echo '</div>';
 
-                    echo '<div class="boekenknop flex">';
-                    echo '<h2>Boeken</h2>';
-                    echo '</div>';
+                    echo '<form method="POST" action="boeken.php">';
+                    echo '<input type="hidden" name="stad" value="' . htmlspecialchars($value['stad']) . '">';
+                    echo '<input type="hidden" name="dealbestemming" value="' . htmlspecialchars($value['dealbestemming']) . '">';
+                    echo '<input type="hidden" name="prijs" value="' . htmlspecialchars($value['prijs']) . '">';
+                    echo '<button type="submit" class="boekenknop flex left"><h2>Boeken</h2></button>';
+                    echo '</form>';
                 }
                 ?>
             </div>
